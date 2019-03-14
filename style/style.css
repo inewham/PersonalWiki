@@ -19,6 +19,10 @@ body {
   padding-right: 1.5em;
 }
 
+.srcConImg {
+  margin: 0.5rem;
+}
+
 #nav-bar-header {
   z-index: 1;
   position: fixed;
