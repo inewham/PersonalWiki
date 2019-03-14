@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/style/style.css" />
+
+    <title>Saiyan Solutions Guides</title>
+  </head>
+  <body>
+
+    <!-- START OF NAVIGATION BAR -->
+
+    <nav>
+
+      <!-- TOP NAVIGATION BAR -->
+
+      <div id="nav-bar-header">
+        <div id="nav-bar-header-left">
+          <img
+            id="img-nav-bar-header-left"
+            src="https://github.com/inewham/portfolio/blob/master/images/ki_bg_eeeeee.gif?raw=true"
+          />
+        </div>
+        <div id="nav-bar-header-right">
+          <span id="nav-bar-header-right-title">Dashboard</span>
+          <div id="icons">
+            <a href="#" alt="settings"><i class="fas fa-cog nav-icons"></i></a>
+            <a href="#" alt="notifications"
+              ><i class="fas fa-bell nav-icons"></i
+            ></a>
+            <a href="#" alt="apps"><i class="fas fa-th nav-icons"></i></a>
+            <a href="#" alt="profile"
+              ><i id="user-icon" class="fas fa-user-circle nav-icons"></i
+            ></a>
+          </div>
+          <!-- Mobile View -->
+          <div id="mob-icons">
+            <div id="user-icon">
+              <a href="#" alt="profile"
+                ><i class="fas fa-user-circle nav-icons mob-a"></i
+              ></a>
+            </div>
+            <div id="mob-icons-right">
+              <a href="#" alt="settings"
+                ><i class="fas fa-cog nav-icons mob-a"></i
+              ></a>
+              <a href="#" alt="notifications"
+                ><i class="fas fa-bell nav-icons mob-a"></i
+              ></a>
+              <a href="#" alt="apps"
+                ><i class="fas fa-th nav-icons mob-a"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="nav-bar-header-mob-title">
+        <span>Dashboard</span><i id="mobDashCart" class="fas fa-caret-down"></i>
+      </div>
+
+      <!-- END OF TOP NAVIGATION BAR -->
+
+      <!-- START OF SIDE MENU BAR -->
+
+      <div id="left-menu">
+        <div id="left-menu-title">
+          <span>Menu</span>
+        </div>
+        <div id="menu-container">
+          <!-- menu-container  -->
+          <ul class="parent-menu">
+            <li class="parent-menu-list">
+              <a id="propertySubMenu" class="parent-menu-link" href="#">
+                <i class="fab fa-apple parent-menu-icon"></i>
+                <span>Applications</span>
+              </a>
+              <ul id="sub-menu-property" class="sub-menu">
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span id="menuOptVscode">VS Code</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>VMware ESXi</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>PFSense</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="parent-menu-list">
+              <a id="tenantSubMenu" class="parent-menu-link" href="#">
+                <i class="fas fa-code parent-menu-icon"></i>
+                <span>Programming</span>
+              </a>
+              <ul id="sub-menu-tenant" class="sub-menu">
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>HTML</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>CSS</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>JavaScript</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>React</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="parent-menu-list">
+              <a id="reportsSubMenu" class="parent-menu-link" href="#">
+                <i class="fab fa-android parent-menu-icon"></i>
+                <span>Cat 1</span>
+              </a>
+              <ul id="sub-menu-reports" class="sub-menu">
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 1</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 2</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 3</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="parent-menu-list">
+              <a id="maintSubMenu" class="parent-menu-link" href="#">
+                <i class="fab fa-android parent-menu-icon"></i>
+                <span>Cat 2</span>
+              </a>
+              <ul id="sub-menu-maint" class="sub-menu">
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 1</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 2</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 3</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="parent-menu-list">
+              <a id="diarySubMenu" class="parent-menu-link" href="#">
+                <i class="fab fa-android parent-menu-icon"></i>
+                <span>Cat 3</span>
+              </a>
+              <ul id="sub-menu-diary" class="sub-menu">
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 1</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 2</span>
+                  </a>
+                </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span>Link 3</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- END OF SIDE MENU BAR -->
+
+    </nav>
+
+    <!-- END OF NAVIGATION BAR -->
+
+    <!-- START MAIN PAGE -->
+
+    -->
+    <p class="active test-text" id="idTestText">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+      est laborum.
+    </p>
+
+    <!-- END OF MAIN PAGE -->
+
+    <!-- START OF VS CODE SECTION -->
+
+    <div class="vscodeText" id="idvscodeText">
+      <h1>Start a New Project</h1>
+      <ol>
+        <li>Open VS Code</li>
+        <li>Select <em><b>'File'</b></b></em>.</li>
+        <li>Select <em><b>'Open Folder...'</b></em>.</li>
+        <li>
+          Click on the <em><b>'Create Folder'</b></em> icon in the the top right corner of the
+          dialogue.
+        </li>
+        <li>
+          Enter a name for the folder in the <em><b>'folder Name'</b></em> field and click
+          <em><b>'Create'</b></em>.
+        </li>
+        <li>Click <em><b>'OK'</b></em>.</li>
+        <li>Select <em><b>'File'</b></em> and then select <em><b>'New File'</b></em>.</li>
+        <li>
+          From the <em><b>'EXPLORER'</b></em> navigation pane click on the <em><b>'New File'</b></em> icon.
+        </li>
+        <ul>
+          <li>
+            If the <em><b>'EXPLORER'</b></em> navigation pane is not visible select the
+            <em><b>'Explorer'</b></em> icon form the left hand pane or press <em><b>'CTRL'</b></em> + <em><b>'Shift'</b></em> +
+            <em><b>'E'</b></em>.
+          </li>
+        </ul>
+        <li>
+          Enter a name for the file including the file extension i.e. index.html
+          and press <em><b>'Enter'</b></em>.
+        </li>
+      </ol>
+
+      <h1>Sync Project to GitHub</h1>
+    </div>
+
+     <!-- END OF VS CODE SECTION -->
+
+    <footer>
+      Saiyan Solutions, &copy; 2016
+      <script>
+        new Date().getFullYear() > 2010 &&
+          document.write("- " + new Date().getFullYear());</script
+      >. All Rights Reserved.
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/javascript/javascript.js"></script>
+  </body>
+</html>
