@@ -19,6 +19,20 @@ body {
   padding-right: 1.5em;
 }
 
+.vmwareText {
+  display: none;
+  padding-top: 4em;
+  padding-left: 16em;
+  padding-right: 1.5em;
+}
+
+.pfsenseText {
+  display: none;
+  padding-top: 4em;
+  padding-left: 16em;
+  padding-right: 1.5em;
+}
+
 .srcConImg {
   margin: 0.5rem;
 }
@@ -144,9 +158,6 @@ body {
   display: none;
 }
 
-/* .fa-caret-down {
-} */
-
 .sub-menu-list {
   padding-left: 4em;
 }
@@ -154,7 +165,6 @@ body {
 .sub-menu-link,
 .parent-menu-link {
   text-align: left;
-  text-decoration: none;
   color: #696969;
 }
 
@@ -243,4 +253,9 @@ footer {
 
 .active {
   display: block;
+}
+
+#applicationMenu {
+  text-decoration: none;
+  color: #696969;
 }
