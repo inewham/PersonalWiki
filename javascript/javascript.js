@@ -19,31 +19,47 @@ $(document).ready(function() {
     $("#mobDashCart").css("transform", "rotate(180deg)");
   });
   $("#menuOptHome").click(function() {
-    $("#idTestText").removeClass("active");
-    $("#idvscodeText").removeClass("active");
-    $("#idvmwareText").removeClass("active");
-    $("#idpfsenseText").removeClass("active");
+    $(".menuTitle").removeClass("active");
     $("#idTestText").addClass("active");
   });
   $("#menuOptVscode").click(function() {
-    $("#idTestText").removeClass("active");
-    $("#idvscodeText").removeClass("active");
-    $("#idvmwareText").removeClass("active");
-    $("#idpfsenseText").removeClass("active");
+    $(".menuTitle").removeClass("active");
     $("#idvscodeText").addClass("active");
   });
   $("#menuOptVmware").click(function() {
-    $("#idTestText").removeClass("active");
-    $("#idvscodeText").removeClass("active");
-    $("#idvmwareText").removeClass("active");
-    $("#idpfsenseText").removeClass("active");
+    $(".menuTitle").removeClass("active");
     $("#idvmwareText").addClass("active");
   });
   $("#menuOptPfsense").click(function() {
-    $("#idTestText").removeClass("active");
-    $("#idvscodeText").removeClass("active");
-    $("#idvmwareText").removeClass("active");
-    $("#idpfsenseText").removeClass("active");
+    $(".menuTitle").removeClass("active");
     $("#idpfsenseText").addClass("active");
+  });
+  $("#menuOptHtml").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idHtmlText").addClass("active");
+  });
+  $("#menuOptCss").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idCssText").addClass("active");
+  });
+  $("#menuOptJava").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idJavaScriptText").addClass("active");
+  });
+  $("#menuOptReact").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idReactText").addClass("active");
+  });
+  $("#menuOptBash").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idBashText").addClass("active");
+  });
+  $("#menuOptPowershell").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idPowershellText").addClass("active");
+  });
+  $("#menuOptBatch").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idBatchText").addClass("active");
   });
 });
