@@ -34,6 +34,10 @@ $(document).ready(function() {
     $(".menuTitle").removeClass("active");
     $("#idpfsenseText").addClass("active");
   });
+  $("#menuOptGit").click(function() {
+    $(".menuTitle").removeClass("active");
+    $("#idGitText").addClass("active");
+  });
   $("#menuOptHtml").click(function() {
     $(".menuTitle").removeClass("active");
     $("#idHtmlText").addClass("active");

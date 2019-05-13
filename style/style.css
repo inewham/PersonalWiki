@@ -33,6 +33,13 @@ body {
   padding-right: 1.5em;
 }
 
+.GitText {
+  display: none;
+  padding-top: 4em;
+  padding-left: 16em;
+  padding-right: 1.5em;
+}
+
 .powerText {
   display: none;
   padding-top: 4em;
@@ -314,6 +321,7 @@ a:hover,
 #menuOptHome,
 #menuOptVmware,
 #menuOptPfsense,
+#menuOptGit,
 #menuOptVscode,
 #diarySubMenu,
 #maintSubMenu,

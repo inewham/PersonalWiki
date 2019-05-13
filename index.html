@@ -102,6 +102,11 @@
                     <span id="menuOptPfsense">PFSense</span>
                   </a>
                 </li>
+                <li class="sub-menu-list">
+                  <a class="sub-menu-link" href="#">
+                    <span id="menuOptGit">Git</span>
+                  </a>
+                </li>
               </ul>
             </li>
             <li class="parent-menu-list">
@@ -474,6 +479,14 @@
 
     <!--  END OF PFSENSE SECTION -->
 
+    <!--  START OF GIT SECTION -->
+
+    <div id="idGitText" class="GitText menuTitle">
+      <h1>Git</h1>
+    </div>
+
+    <!--  END OF GIT SECTION -->
+
     <!--  START OF HTML SECTION -->
 
     <div id="idHtmlText" class="htmlText menuTitle">
@@ -517,7 +530,28 @@
     <!--  START OF BASH SECTION -->
 
     <div id="idBashText" class="bashText menuTitle">
-      <h1>Linux Bash</h1>
+      <h1>Mount NFS share</h1>
+      <ol>
+        <li>
+          sudo mount &lt;DEVICE&gt; &lt;DESTINATION&gt;
+          <ul>
+            <li>
+              Example DEVICE /dev/sdb1; use dmesg to determine the relevant
+              device information.
+            </li>
+            <li>
+              The DESTINATION could be a local folder or a remote NFS share e.g
+              <em><strong>192.168.0.1:/mnt/nfsshare</strong></em
+              >.
+            </li>
+            <li>
+              To map a remote NFS at startup an entry needs to be added to
+              <em><strong>/etc/fstab</strong></em> file.<br />
+              Example: <em><strong>192.168.0.1:/mnt/nfsshare nfs</strong></em>
+            </li>
+          </ul>
+        </li>
+      </ol>
     </div>
 
     <!--  END OF BASH SECTION -->
