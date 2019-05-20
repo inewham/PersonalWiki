@@ -484,7 +484,7 @@
     <div id="idGitText" class="GitText menuTitle">
       <h1>Git</h1>
       <p>Source control becomes useful when working on projects with two or more collaborators.
-        Providing centralised source control system i.e. Clent/Server model.
+        Providing centralised source control system i.e. Clent/Server model. </p>
         <ul>
           <li>The server will hold the source file.</li>
           <li>Track changes</li>
@@ -496,7 +496,107 @@
           <li>Complete and full history of the project including commits and branches</li>
           <li>Allow collaborators to work offline</li>
         </ul>
-      </p>
+        <p>Below is a list of resources relating to Git.</p>
+        <ul>
+          <li>
+            <strong><a href="https://git-scm.com/" target="_blank">git-scm.com</a></strong>
+          </li>
+          <ul>
+            <li>
+              Homepage for the actual Git project
+              <ul>
+                <li>
+                  Includes tolls, documentation
+                </li>
+                <li>
+                  Includes a free book
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <li>
+            <strong>Gitorious - gitorious.org</strong>
+            <ul>
+              <li>
+                Git hosting and collaboration software.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>GitLab - <a href="https://about.gitlab.com/" target="_blank">www.gitlab.com</a></strong>
+            <ul>
+              <li>
+                Self-hosted code collaboration
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Bitbucket - <a href="https://bitbucket.org/" target="_blank">bitbucket.org</a></strong>
+            <ul>
+              <li>
+                Cloud hosted private code repositories
+                <ul>
+                  <li>Free for 5 users</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Atlassian stash - <a href="https://www.atlassian.com/" target="_blank">www.atlassian.com</a></strong>
+            <ul>
+              <li>
+                On-Premise enterprise source code management for Git
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>GitHub - <a href="https://github.com/" target="_blank">github.com</a></strong>
+            <ul>
+              <li>
+                Cloud hosted code repositories
+                <ul>
+                  <li>
+                    Free version; public repositories only
+                  </li>
+                  <li>
+                    Subscription allows private repositories
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+            When you clone a repository it creates:
+            <ul>
+              <li>
+                Working copy/Tree
+                <ul>
+                  <li>
+                    All files are tracked, included added and changed files.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            When files are added/changed the file will be displayed in the working area.
+            <ul>
+              <li>
+                The file should then be marked/moved to the staging area
+              </li>
+            </ul>
+            Working area => Staging area => Commit changes to working copy => Push to remote respository.<br>
+            Changes need to be committed to the local repository.
+            <ul>
+              <li>
+                When making a commit you can add a commit message
+                <ul>
+                  <li>
+                    Commit messages in VS Code are limited to 50 characters
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </p>
     </div>
 
     <!--  END OF GIT SECTION -->
@@ -545,9 +645,9 @@
 
     <div id="idBashText" class="bashText menuTitle">
       <h1>Mount NFS share</h1>
-      <ol>
+      <ul>
         <li>
-          sudo mount &lt;DEVICE&gt; &lt;DESTINATION&gt;
+          sudo mount <strong>&lt;DEVICE&gt; &lt;DESTINATION&gt;</strong>
           <ul>
             <li>
               Example DEVICE /dev/sdb1; use dmesg to determine the relevant
@@ -565,7 +665,25 @@
             </li>
           </ul>
         </li>
-      </ol>
+      </ul>
+      <h1>Accessing an ExFAT Volume</h1>
+      <ul>
+        <li>
+          To access an exFAT volume you will need to ensure the below utilities are installed:
+          <ul>
+            <li>exfat-utils</li>
+            <li>exfat-fuse</li>
+          </ul>
+        </li>
+        <li>
+          To install the above utilities, run the following command:
+          <ul>
+            <li>
+              <strong><em>sudo apt install exfat-utils exfat-fuse</em></strong>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
     <!--  END OF BASH SECTION -->
