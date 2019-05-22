@@ -605,39 +605,112 @@
             When a Push is made the local commits are commited to the remote repository and the local and remote repositories become aligned.
           </p>
           <h1>
-            Clone a Remote Repository using the Command Line Tool
+            Getting started using the Command Line Tool
           </h1>
-          <ul>
-            <li>
-              Navigate to  the directory where the local repository files will be cloned to.
-              <ul>
-                <li>
-                  git clone <strong><em>REPO URL</em></strong>
-                  <ul>
-                    <li>
-                      URL should end with a <strong><em>.git</em></strong> file extension.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  List branches in the repository
-                  <ul>
-                    <li>
-                      git branch
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  View the last commit logs
-                  <ul>
-                    <li>
-                      git log
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <p>
+            Navigate to  the directory where the local repository files will be cloned to.  
+            <ul>
+              <li>
+                <strong><em>git clone &lt;REPO URL&gt;</em></strong>
+                <ul>
+                  <li>
+                    URL should end with a <strong><em>.git</em></strong> file extension.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                List branches in the repository
+                <ul>
+                  <li>
+                    <strong><em>git branch</em></strong>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                View the last commit logs
+                <ul>
+                  <li>
+                    <strong><em>git log</em></strong>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </p>  
+          <p>
+            To display which files have been changed:
+            <ul>
+              <li>
+                <strong><em>get status</em></strong>
+              </li>
+            </ul>
+          </p>
+          <p>
+            To add changed files to the staging area ready for a commit:
+            <ul>
+              <li>
+                <strong><em>get add &lt;filename&gt;</em></strong>
+              </li>
+              or
+              <li>
+                <strong><em>git add --all</em></strong>
+              </li>
+            </ul>
+          </p>
+          <p>
+            Commit changes to the local reepository:
+            <ul>
+              <li>
+                <strong><em>git commit</em></strong>
+              </li>
+            </ul>
+          </p>
+          <p>
+            If the commit is your first commit, using the git cli, you will be prompted to add the information which will be tagged to the commits:
+            <ul>
+              <li>
+                <strong><em>git config --global user.email "John.Doe@gmail.com"</em></strong>
+              </li>
+              <li>
+                <strong><em>git config --global user.name "John Doe"</em></strong>
+              </li>
+            </ul>
+            You will also be prompted to add a commit message.
+          </p>
+          <p>
+            When performing a <strong><em>'git status'</em></strong> the output will compare the lcocal to the remote repository and inform you of how many commits the local repository compares
+            to the remote repository i.e. "Your branch is ahead of 'origin/master' by 2 commits."
+          </p>
+          <p>
+            Perfoming a <strong><em>'git branch --all'</em></strong> lists all local and remote branches.
+          </p>
+          <p>
+            Performing a <strong><em>'git diff origin/master'</em></strong> lists the changes in the local and remote repository.
+          </p>
+          <p>
+            <strong><em>Git pull</em></strong> is a combination of 2 commands:
+            <ol>
+              <li>
+                <strong><em>git fetch</em></strong> (sychronises local to remote repository)
+              </li>
+              <li>
+                <strong><em>git merge origin/master</em></strong>
+              </li>
+            </ol>
+          </p>
+          <p>
+            <strong><em>git stash</em></strong> is used to save the changes to files in the staging area, but work with the previous file version.
+            <ul>
+              <li>
+                <strong><em>git stash list</em></strong> - will list all files stashed.
+              </li>
+              <li>
+                <strong><em>git stash apply</em></strong> - will retrieve the last stashed file.
+              </li>
+              <li>
+                <strong><em>git stash drop stash@{0}</em></strong> - removes the entry from the stash list.
+              </li>
+            </ul>
+          </p>
     </div>
 
     <!--  END OF GIT SECTION -->
